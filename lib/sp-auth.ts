@@ -146,7 +146,7 @@ const makeApplication = async (uid: string, pointsAdded: number, pointsRemoved: 
     embeds: [
       {
         title: `${global_name}@${fullname}によるポイント申請`,
-        description: `付与予定のポイント: ${pointsAdded}\n 理由: ${reason_str}\n[申請リンク](${messageLink})\n承認/却下は[こちら](https://${process.env.NEXT_PUBLIC_HOST_URL}/admin/list)で行ってください`,
+        description: `付与予定のポイント: ${pointsAdded}\n 理由: ${reason_str}\n[申請リンク](${messageLink})\n承認/却下は[こちら](https://lopps.vercel.app/admin/list)で行ってください`,
         color: 0x0080c0,
         footer: {
           text: "LoPPS Point System",
