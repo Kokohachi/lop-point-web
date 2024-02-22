@@ -79,6 +79,9 @@ export default function History() {
                   <Text color="gray" size="lg" mt={"sm"}>
                     特筆事項：{app.applyInfo.note}
                   </Text>
+                  <Text color="gray" size="lg" mt={"sm"}>
+                    申請日：{app.created_at.split("T")[0]}
+                  </Text>
                   <Anchor
                     href={app.applyInfo.messageLink}
                     color="blue"

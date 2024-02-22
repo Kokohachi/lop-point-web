@@ -186,7 +186,7 @@ const getUserApplications = async (uid: string) => {
     console.log(error);
     return;
   }
-  const nres = data?.filter((app: any) => app.applyInfo.uid === uid);
+  const nres = data?.filter((app: any) => app.applyInfo.uid === uid).sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
   return nres;
 }
 
